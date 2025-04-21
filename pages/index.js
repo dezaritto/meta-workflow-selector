@@ -17,7 +17,7 @@ const workflowOptions = [
     question: "Do they only want product implementation?",
     options: [
       { label: "Yes, with advice", link: "https://workflow-product-advice-implementation.vercel.app" },
-      { label: "Yes, execution-only (no advice)", link: "https://example.com/intermediary-only" }
+      { label: "Yes, execution-only (no advice)", link: https://workflow-intermediary-services-only.vercel.app" }
     ]
   }
 ];
