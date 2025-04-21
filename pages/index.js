@@ -2,7 +2,7 @@ const workflowOptions = [
   {
     question: "Does the client want a full financial planning relationship?",
     options: [
-      { { label: "Yes, but they don’t have a financial plan", link: "https://workflow-full-planning-no-plan.vercel.app" },
+      { label: "Yes, and they already have a financial plan", link: "https://workflow-full-planning-no-plan.vercel.app" },
       { label: "Yes, but they don’t have a financial plan", link: "https://example.com/full-plan-new" }
     ]
   },
