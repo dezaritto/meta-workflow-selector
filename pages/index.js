@@ -10,7 +10,7 @@ const workflowOptions = [
     question: "Does the client want a limited planning engagement?",
     options: [
       { label: "Yes, and they already have a plan", link: "https://workflow-limited-planning-with-plan.vercel.app" },
-      { label: "Yes, but they don’t have a plan", link: "https://example.com/limited-plan-new" }
+      { label: "Yes, but they don’t have a plan", link: "https://workflow-limited-planning-no-plan.vercel.app" }
     ]
   },
   {
