@@ -1,49 +1,39 @@
-const workflowOptions = [
-  {
-    question: "Does the client want a full financial planning relationship?",
-    options: [
-      { label: "Yes, and they already have a financial plan", link: "https://workflow-full-planning-no-plan-4lmk.vercel.app/" },
-      { label: "Yes, but they don’t have a financial plan", link: "https://workflow-full-planning-no-plan.vercel.app" }
-    ]
-  },
-  {
-    question: "Does the client want a limited planning engagement?",
-    options: [
-      { label: "Yes, and they already have a plan", link: "https://workflow-limited-planning-with-plan.vercel.app" },
-      { label: "Yes, but they don’t have a plan", link: "https://workflow-limited-planning-no-plan.vercel.app" }
-    ]
-  },
-  {
-    question: "Do they only want product implementation?",
-    options: [
-      { label: "Yes, with advice", link: "https://workflow-product-advice-implementation.vercel.app" },
-      { label: "Yes, execution-only (no advice)", link: "https://workflow-intermediary-services-only.vercel.app" }
-    ]
-  }
-];
+cexport default function MetaSelector() {
+  const sections = [
+    {
+      label: "New Clients",
+      options: [
+        { label: "Full Planning – No Plan", path: "/workflow/full-no-plan" },
+        { label: "Full Planning – With Plan", path: "/workflow/full-with-plan" },
+        { label: "Limited Planning – With Plan", path: "/workflow/limited-with-plan" },
+        { label: "Limited Planning – No Plan", path: "/workflow/limited-no-plan" },
+        { label: "Product Advice & Implementation", path: "/workflow/product-advice" },
+        { label: "Product Implementation (Intermediary Only)", path: "/workflow/intermediary-only" }
+      ]
+    },
+    {
+      label: "Existing Clients",
+      options: [
+        { label: "Intermediary to Planning Introduction", path: "/workflow/intermediary-to-planning" }
+      ]
+    }
+  ];
 
-export default function Home() {
   return (
-    <div className="min-h-screen p-6 bg-gray-50 text-gray-900">
+    <div className="min-h-screen p-6 bg-white text-gray-800">
       <h1 className="text-2xl font-bold mb-6">Start Here: Workflow Selector</h1>
-      <div className="space-y-6">
-        {workflowOptions.map((step, index) => (
-          <div key={index} className="border p-4 rounded-xl shadow-sm bg-white">
-            <h2 className="font-semibold mb-2">{step.question}</h2>
-            <div className="space-y-2">
-              {step.options.map((option, i) => (
-                <button
-                  key={i}
-                  onClick={() => window.open(option.link, '_blank')}
-                  className="w-full px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50"
-                >
-                  {option.label}
-                </button>
-              ))}
-            </div>
+      {sections.map((section, i) => (
+        <div key={i} className="mb-6">
+          <h2 className="text-xl font-semibold mb-2">{section.label}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {section.options.map((item, j) => (
+              <a key={j} href={item.path} className="block border border-blue-600 rounded-lg p-4 hover:bg-blue-50">
+                {item.label}
+              </a>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
