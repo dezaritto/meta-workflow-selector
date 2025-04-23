@@ -9,12 +9,15 @@ export default function MetaSelector() {
         { label: "Limited Plan – No Plan", path: "/workflow/limited-no-plan" },
         { label: "Product Advice & Implementation", path: "/workflow/product-advice" },
         { label: "Product Implementation (Intermediary Only)", path: "/workflow/intermediary-only" }
+        { label: "Adviser Dashboard", path: "/dashboard" },
       ]
     },
     {
       label: "Existing Clients",
       options: [
         { label: "Intermediary to Planning Introduction", path: "/workflow/intermediary-to-planning" }
+        <h2 className="text-xl font-semibold col-span-2 mt-6">Adviser Tools</h2>
+        { label: "Adviser Dashboard", path: "/dashboard" },
       ]
     }
   ];
