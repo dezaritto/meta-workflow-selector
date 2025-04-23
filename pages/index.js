@@ -1,4 +1,4 @@
-cexport default function MetaSelector() {
+export default function MetaSelector() {
   const sections = [
     {
       label: "New Clients",
