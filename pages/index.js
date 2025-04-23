@@ -3,10 +3,10 @@ export default function MetaSelector() {
     {
       label: "New Clients",
       options: [
-        { label: "Full Planning – No Plan", path: "/workflow/full-no-plan" },
-        { label: "Full Planning – With Plan", path: "/workflow/full-with-plan" },
-        { label: "Limited Planning – With Plan", path: "/workflow/limited-with-plan" },
-        { label: "Limited Planning – No Plan", path: "/workflow/limited-no-plan" },
+        { label: "Full Plan – No Plan", path: "/workflow/full-no-plan" },
+        { label: "Full Plan – With Plan", path: "/workflow/full-with-plan" },
+        { label: "Limited Plan – With Plan", path: "/workflow/limited-with-plan" },
+        { label: "Limited Plan – No Plan", path: "/workflow/limited-no-plan" },
         { label: "Product Advice & Implementation", path: "/workflow/product-advice" },
         { label: "Product Implementation (Intermediary Only)", path: "/workflow/intermediary-only" }
       ]
@@ -37,4 +37,3 @@ export default function MetaSelector() {
     </div>
   );
 }
-Switch to grouped meta-selector for new and existing clients
