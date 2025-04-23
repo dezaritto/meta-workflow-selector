@@ -1,3 +1,3 @@
-export default function FullNoPlan() {
-  return <div className="p-4 text-xl">Full Plan – No Plan workflow coming soon.</div>;
+export default function ProductAdvice() {
+  return <div className="p-6 text-lg">This is the Product Advice & Implementation workflow. Content coming soon.</div>;
 }
