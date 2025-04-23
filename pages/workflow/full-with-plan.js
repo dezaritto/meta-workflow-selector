@@ -1,3 +1,3 @@
-export default function FullNoPlan() {
-  return <div className="p-4 text-xl">Full Plan – No Plan workflow coming soon.</div>;
+export default function FullWithPlan() {
+  return <div className="p-6 text-lg">This is the Full Plan – With Plan workflow. Content coming soon.</div>;
 }
